@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #325D88;
+  --color-text-white: #eee;
+  --color-text-white-opacity: rgba(238, 238, 238, 0.5);
+}
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.page {
+
+}
