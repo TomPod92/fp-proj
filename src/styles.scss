@@ -1,7 +1,12 @@
 :root {
   --color-primary: #325D88;
+  --color-button: #2AABE2;
   --color-text-white: #eee;
+  --color-text-black: rgb(24, 24, 24);
   --color-text-white-opacity: rgba(238, 238, 238, 0.5);
+  --color-grey: rgb(133, 133, 133);
+  --color-hover: #FAF5F1;
+  --border-radius: 5px;
 }
 
 *, *:after, *:before {
