@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductsModule } from './products/products.module';
 import { RouterModule } from '@angular/router';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RouterModule } from '@angular/router';
       { path: 'not-found', component: PageNotFoundComponent },
       { path: '**', redirectTo: '/not-found', pathMatch: 'full' },
     ]),
-    ProductsModule
+    ProductsModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
