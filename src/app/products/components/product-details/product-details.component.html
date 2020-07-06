@@ -1,1 +1,23 @@
-<div> Product Details</div>
+<div class="page">
+  <a routerLink="/products" class="button--primary backButton">Back to list</a>
+
+  <div *ngIf="product" class="product">
+    <div class="product__header">{{ product.name }} #{{ product.id }}</div>
+
+    <div class="product__info">
+      <span class="product__label">Name:</span>
+      <span class="name">{{ product.name }} #{{ product.id }}</span>
+    </div>
+
+    <div class="product__info">
+      <span class="product__label">Price:</span>
+      <span class="price">{{ product.price | currency: 'EUR' }}</span>
+    </div>
+
+    <div class="product__info">
+      <span class="product__label">Description:</span>
+      <span class="description">{{ product.description }}</span>
+    </div>
+
+  </div>
+</div>

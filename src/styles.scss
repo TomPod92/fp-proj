@@ -7,6 +7,7 @@
   --color-grey: rgb(133, 133, 133);
   --color-hover: #FAF5F1;
   --border-radius: 5px;
+  --shadow-dark: 0 0 1rem rgba(24, 24, 24, 0.3);
 }
 
 *, *:after, *:before {
@@ -25,5 +26,14 @@ body {
 }
 
 .page {
+  padding: 1rem;
+}
 
+.button--primary {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: var(--color-text-white);
+  background: var(--color-button);
+  border: none;
+  border-radius: var(--border-radius);
 }
