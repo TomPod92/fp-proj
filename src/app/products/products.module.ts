@@ -13,8 +13,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
   imports: [
     CommonModule,
     RouterModule.forChild([
-      { path: 'products', component: ProductsListComponent },
-      { path: 'products/:product_id', component: ProductDetailsComponent },
+      { path: '', component: ProductsListComponent },
+      { path: ':product_id', component: ProductDetailsComponent },
     ])
   ]
 })

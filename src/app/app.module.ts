@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ProductsModule } from './products/products.module';
 import { RouterModule } from '@angular/router';
 import { CoreModule } from './core/core.module';
 
@@ -17,18 +16,18 @@ import { CoreModule } from './core/core.module';
     HomeComponent,
     NavigationComponent,
     ContactComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    // AppRoutingModule,
+    // AppRoutingModule, // gdybyśmy chcieli mieć routing w jednym miejscu
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
+      { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule) },
       { path: 'contact', component: ContactComponent },
       { path: 'not-found', component: PageNotFoundComponent },
       { path: '**', redirectTo: '/not-found', pathMatch: 'full' },
     ]),
-    ProductsModule,
     CoreModule
   ],
   providers: [],
