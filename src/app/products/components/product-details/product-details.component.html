@@ -2,11 +2,11 @@
   <a routerLink="/products" class="button--primary backButton">Back to list</a>
 
   <div *ngIf="product" class="product">
-    <div class="product__header">{{ product.name }} #{{ product.id }}</div>
+    <div class="product__header">{{ product.name }}</div>
 
     <div class="product__info">
       <span class="product__label">Name:</span>
-      <span class="name">{{ product.name }} #{{ product.id }}</span>
+      <span class="name">{{ product.name }}</span>
     </div>
 
     <div class="product__info">
