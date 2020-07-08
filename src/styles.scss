@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #325D88;
+  --color-button: #2AABE2;
+  --color-text-white: #eee;
+  --color-text-black: rgb(24, 24, 24);
+  --color-text-white-opacity: rgba(238, 238, 238, 0.5);
+  --color-grey: rgb(133, 133, 133);
+  --color-hover: #FAF5F1;
+  --border-radius: 5px;
+  --shadow-dark: 0 0 1rem rgba(24, 24, 24, 0.3);
+}
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.page {
+  padding: 1rem;
+}
+
+.button--primary {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: var(--color-text-white);
+  background: var(--color-button);
+  border: none;
+  border-radius: var(--border-radius);
+}

@@ -1,0 +1,12 @@
+<div class="page">
+  <ul class="products-list" *ngIf="products">
+    <li class="list-item" *ngFor="let product of products">
+      <span class="list-item__name">{{product.name}}</span>
+      <span class="list-item__productId">#{{product.id}}</span>
+      <span class="list-item__price" [ngStyle]="{color: product.price === 0 ? 'red' : 'black'}" >
+        {{product.price | currency: 'EUR' }}
+      </span>
+      <a [routerLink]="['/products', product.id]" class="button--primary">Details</a>
+    </li>
+  </ul>
+</div>
